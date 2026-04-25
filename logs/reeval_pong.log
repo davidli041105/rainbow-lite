@@ -1,0 +1,102 @@
+nohup: ignoring input
+A.L.E: Arcade Learning Environment (version 0.11.2+ecc1138)
+[Powered by Stella]
+Found 4 variants:
+  pong_double
+  pong_double_duel
+  pong_dqn
+  pong_dueling
+
+=== pong_double  (double=True, dueling=False) ===
+  step=  100000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.2s)
+  step=  200000  mean= -21.00  std= 0.00  min= -21  max= -21  (26.7s)
+  step=  300000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.0s)
+  step=  400000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.1s)
+  step=  500000  mean= -17.40  std= 1.36  min= -19  max= -13  (54.6s)
+  step=  600000  mean= -18.45  std= 3.14  min= -21  max= -10  (47.8s)
+  step=  700000  mean= -20.45  std= 0.59  min= -21  max= -19  (32.4s)
+  step=  800000  mean= -19.60  std= 0.73  min= -21  max= -18  (57.6s)
+  step=  900000  mean= -20.25  std= 1.04  min= -21  max= -18  (51.4s)
+  step= 1000000  mean= -20.00  std= 1.14  min= -21  max= -18  (73.0s)
+  step= 1100000  mean= -19.15  std= 2.01  min= -21  max= -16  (106.4s)
+  step= 1200000  mean= -18.70  std= 1.76  min= -20  max= -13  (80.3s)
+  step= 1300000  mean= -19.15  std= 1.24  min= -21  max= -16  (59.3s)
+  step= 1400000  mean= -16.10  std= 3.36  min= -20  max= -11  (79.8s)
+  step= 1500000  mean= -20.25  std= 1.44  min= -21  max= -15  (38.6s)
+  step= 1600000  mean= -18.30  std= 1.31  min= -20  max= -16  (70.1s)
+  step= 1700000  mean= -20.20  std= 0.93  min= -21  max= -17  (40.1s)
+  step= 1800000  mean= -17.45  std= 2.97  min= -21  max= -13  (67.8s)
+  step= 1900000  mean= -17.30  std= 3.12  min= -21  max=  -6  (74.5s)
+  step= 2000000  mean= -16.40  std= 2.46  min= -20  max= -13  (84.5s)
+  -> runs/pong_double/reeval.csv
+
+=== pong_double_duel  (double=True, dueling=True) ===
+  step=  100000  mean= -21.00  std= 0.00  min= -21  max= -21  (29.3s)
+  step=  200000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.8s)
+  step=  300000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.7s)
+  step=  400000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.6s)
+  step=  500000  mean= -21.00  std= 0.00  min= -21  max= -21  (29.8s)
+  step=  600000  mean= -21.00  std= 0.00  min= -21  max= -21  (37.2s)
+  step=  700000  mean= -20.95  std= 0.22  min= -21  max= -20  (51.8s)
+  step=  800000  mean= -19.70  std= 1.45  min= -21  max= -18  (50.5s)
+  step=  900000  mean= -19.15  std= 2.01  min= -21  max= -15  (52.0s)
+  step= 1000000  mean= -18.85  std= 2.15  min= -21  max= -14  (81.6s)
+  step= 1100000  mean= -20.30  std= 0.95  min= -21  max= -19  (92.1s)
+  step= 1200000  mean= -16.65  std= 2.48  min= -19  max=  -9  (100.2s)
+  step= 1300000  mean= -12.50  std= 7.93  min= -21  max=   0  (394.1s)
+  step= 1400000  mean= -18.30  std= 4.38  min= -21  max=  -1  (205.7s)
+  step= 1500000  mean= -14.55  std= 6.82  min= -21  max=  -1  (217.1s)
+  step= 1600000  mean= -11.10  std= 6.07  min= -21  max=  -3  (171.5s)
+  step= 1700000  mean= -15.85  std= 4.36  min= -20  max=  -5  (101.1s)
+  step= 1800000  mean= -16.40  std= 6.30  min= -21  max=   1  (275.5s)
+  step= 1900000  mean= -15.45  std= 6.03  min= -21  max=  -3  (169.3s)
+  step= 2000000  mean= -15.75  std= 4.54  min= -21  max=   0  (199.2s)
+  -> runs/pong_double_duel/reeval.csv
+
+=== pong_dqn  (double=False, dueling=False) ===
+  step=  100000  mean= -21.00  std= 0.00  min= -21  max= -21  (27.9s)
+  step=  200000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.2s)
+  step=  300000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.4s)
+  step=  400000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.5s)
+  step=  500000  mean= -21.00  std= 0.00  min= -21  max= -21  (31.2s)
+  step=  600000  mean= -20.80  std= 0.51  min= -21  max= -19  (38.4s)
+  step=  700000  mean= -16.95  std= 5.99  min= -21  max=   5  (112.0s)
+  step=  800000  mean= -19.70  std= 1.98  min= -21  max= -15  (102.7s)
+  step=  900000  mean= -20.30  std= 1.35  min= -21  max= -16  (43.6s)
+  step= 1000000  mean= -20.05  std= 0.80  min= -21  max= -19  (79.9s)
+  step= 1100000  mean= -18.40  std= 2.03  min= -21  max= -15  (100.8s)
+  step= 1200000  mean= -15.00  std= 4.05  min= -20  max=  -9  (100.5s)
+  step= 1300000  mean= -17.20  std= 2.20  min= -21  max= -12  (95.9s)
+  step= 1400000  mean= -14.35  std= 5.33  min= -19  max=   5  (151.3s)
+  step= 1500000  mean= -14.75  std= 2.81  min= -20  max=  -9  (124.9s)
+  step= 1600000  mean= -16.00  std= 5.23  min= -21  max=  -1  (236.0s)
+  step= 1700000  mean= -14.40  std= 3.68  min= -21  max=  -9  (131.0s)
+  step= 1800000  mean= -15.10  std= 5.01  min= -21  max=  -3  (102.9s)
+  step= 1900000  mean= -17.20  std= 3.11  min= -20  max= -11  (87.8s)
+  step= 2000000  mean= -13.85  std= 4.02  min= -18  max=  -5  (109.6s)
+  -> runs/pong_dqn/reeval.csv
+
+=== pong_dueling  (double=False, dueling=True) ===
+  step=  100000  mean= -21.00  std= 0.00  min= -21  max= -21  (28.9s)
+  step=  200000  mean= -21.00  std= 0.00  min= -21  max= -21  (29.9s)
+  step=  300000  mean= -21.00  std= 0.00  min= -21  max= -21  (29.7s)
+  step=  400000  mean= -20.90  std= 0.30  min= -21  max= -20  (30.6s)
+  step=  500000  mean= -20.50  std= 0.50  min= -21  max= -20  (38.1s)
+  step=  600000  mean= -21.00  std= 0.00  min= -21  max= -21  (46.7s)
+  step=  700000  mean= -21.00  std= 0.00  min= -21  max= -21  (30.0s)
+  step=  800000  mean= -20.25  std= 1.30  min= -21  max= -15  (55.9s)
+  step=  900000  mean= -20.30  std= 1.19  min= -21  max= -17  (59.1s)
+  step= 1000000  mean= -15.50  std= 2.04  min= -18  max=  -9  (88.6s)
+  step= 1100000  mean= -15.25  std= 5.66  min= -21  max=  -4  (92.2s)
+  step= 1200000  mean= -17.65  std= 4.13  min= -20  max=  -8  (118.3s)
+  step= 1300000  mean= -17.30  std= 2.95  min= -21  max= -13  (99.9s)
+  step= 1400000  mean= -14.30  std= 4.15  min= -19  max=  -5  (147.1s)
+  step= 1500000  mean= -15.65  std= 3.73  min= -21  max=  -5  (123.9s)
+  step= 1600000  mean=   1.65  std= 4.07  min=  -4  max=   8  (146.2s)
+  step= 1700000  mean=  -5.20  std= 6.72  min= -15  max=  12  (390.6s)
+  step= 1800000  mean=  -7.35  std= 9.63  min= -17  max=  14  (143.2s)
+  step= 1900000  mean=   2.20  std= 9.30  min= -17  max=  16  (413.5s)
+  step= 2000000  mean=  -5.85  std=13.95  min= -20  max=  14  (137.7s)
+  -> runs/pong_dueling/reeval.csv
+
+Done.
