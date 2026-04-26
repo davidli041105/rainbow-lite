@@ -1,3 +1,43 @@
 nohup: ignoring input
 A.L.E: Arcade Learning Environment (version 0.11.2+ecc1138)
 [Powered by Stella]
+Found 4 variants: ['breakout_double', 'breakout_double_duel', 'breakout_dqn', 'breakout_dueling']
+Settings: n_eps=15, stride=250000, max_steps=8000
+
+=== breakout_double  (double=True, dueling=False) ===
+  Will evaluate 6 checkpoints: [500000, 1000000, 1500000, 2000000, 2500000, 3000000]
+  step=  500000  mean=   0.27  std= 0.57  min=   0  max=   2  (180.5s)
+  step= 1000000  mean=   4.07  std= 2.02  min=   1  max=   7  (115.3s)
+  step= 1500000  mean=   9.67  std= 4.42  min=   2  max=  15  (126.4s)
+  step= 2000000  mean=  12.33  std= 8.29  min=   2  max=  32  (171.9s)
+  step= 2500000  mean=  22.00  std= 7.45  min=   6  max=  33  (164.5s)
+  step= 3000000  mean=  24.67  std= 8.89  min=  12  max=  38  (149.8s)
+
+=== breakout_double_duel  (double=True, dueling=True) ===
+  Will evaluate 6 checkpoints: [500000, 1000000, 1500000, 2000000, 2500000, 3000000]
+  step=  500000  mean=   0.73  std= 1.48  min=   0  max=   6  (176.6s)
+  step= 1000000  mean=   2.47  std= 3.07  min=   0  max=  10  (182.3s)
+  step= 1500000  mean=   0.87  std= 1.59  min=   0  max=   6  (175.7s)
+  step= 2000000  mean=   3.33  std= 4.38  min=   0  max=  15  (179.0s)
+  step= 2500000  mean=   3.47  std= 3.56  min=   0  max=  11  (172.2s)
+  step= 3000000  mean=   8.87  std= 5.45  min=   3  max=  18  (175.3s)
+
+=== breakout_dqn  (double=False, dueling=False) ===
+  Will evaluate 6 checkpoints: [500000, 1000000, 1500000, 2000000, 2500000, 3000000]
+  step=  500000  mean=   0.20  std= 0.54  min=   0  max=   2  (132.5s)
+  step= 1000000  mean=   5.67  std= 3.61  min=   0  max=  11  (129.0s)
+  step= 1500000  mean=   9.13  std= 4.92  min=   4  max=  24  (160.8s)
+  step= 2000000  mean=  12.07  std= 5.36  min=   4  max=  24  (160.0s)
+  step= 2500000  mean=  12.67  std=10.84  min=   1  max=  35  (165.3s)
+  step= 3000000  mean=  15.80  std= 9.77  min=   1  max=  37  (164.5s)
+
+=== breakout_dueling  (double=False, dueling=True) ===
+  Will evaluate 6 checkpoints: [500000, 1000000, 1500000, 2000000, 2500000, 3000000]
+  step=  500000  mean=   1.27  std= 1.84  min=   0  max=   7  (176.5s)
+  step= 1000000  mean=   1.93  std= 2.62  min=   0  max=   9  (183.2s)
+  step= 1500000  mean=   3.60  std= 3.18  min=   0  max=  10  (157.0s)
+  step= 2000000  mean=   4.07  std= 5.11  min=   0  max=  15  (172.7s)
+  step= 2500000  mean=   7.13  std= 4.19  min=   2  max=  17  (180.2s)
+  step= 3000000  mean=  10.60  std= 7.41  min=   2  max=  29  (175.0s)
+
+Done.
