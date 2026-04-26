@@ -3,12 +3,18 @@
 **Final Project — Reinforcement Learning, Spring 2026**
 School of Artificial Intelligence, Xi'an Jiaotong University
 
-This repository contains the code and experimental results for a course final project that reproduces two of the six improvements unified by the Rainbow agent (Hessel et al., AAAI 2018):
+This repository contains the code and experimental results for a course final
+project that reproduces two of the six improvements unified by the Rainbow
+agent (Hessel et al., AAAI 2018):
 
-- **Double DQN** (van Hasselt et al., AAAI 2016) — decouples action selection from value estimation in the TD target.
-- **Dueling Network** (Wang et al., ICML 2016) — factors `Q(s,a)` into a state value `V(s)` and an advantage `A(s,a)`.
+- **Double DQN** (van Hasselt et al., AAAI 2016) — decouples action selection
+  from value estimation in the TD target.
+- **Dueling Network** (Wang et al., ICML 2016) — factors `Q(s,a)` into a state
+  value `V(s)` and an advantage `A(s,a)`.
 
-The experiment is a 2×2 ablation over `{Double, no-Double} × {Dueling, no-Dueling}`, trained from scratch on **Pong** (2M frames) and **Breakout** (3M frames) on a single RTX 4090 (24GB).
+The experiment is a 2×2 ablation over `{Double, no-Double} × {Dueling, no-Dueling}`,
+trained from scratch on **Pong** (2M frames) and **Breakout** (3M frames) on a
+single RTX 4090 (24GB).
 
 ---
 
@@ -28,7 +34,7 @@ Three findings worth highlighting:
 2. **Double DQN's overestimation suppression is robust across both games**, even
    on Pong where its policy benefit is invisible. The mean predicted Q-value
    for Double-equipped variants stays consistently below their non-Double
-   counterparts throughout training (see `pong_qvalues.png`, `breakout_qvalues.png`).
+   counterparts throughout training.
 3. **No additive composition** at this scale. Double + Dueling never beats the
    better single improvement on either game, contrary to the Rainbow paper's
    composability claim.
@@ -37,6 +43,35 @@ These results are consistent with the per-game variance reported in the
 original Double DQN and Dueling papers. The lack of composition is at
 odds with Rainbow, which we attribute primarily to our reduced training
 budget (~1% of the paper's 200M frames per game) and single seed.
+
+---
+
+## Headline figures
+
+The two figures below are the strongest illustrations of the findings above.
+The complete set (`pong_curves.png`, `pong_qvalues.png`, `breakout_curves.png`,
+`breakout_qvalues.png`) sits in the repo root.
+
+### Game-dependent policy gains
+
+Dueling wins decisively on Pong; Double wins decisively on Breakout. The two
+single-improvement variants effectively swap places between the two games,
+and the combined variant fails to recover the better single result on either.
+
+| Pong (Dueling wins) | Breakout (Double wins) |
+| :---: | :---: |
+| ![Pong learning curves](pong_curves.png) | ![Breakout learning curves](breakout_curves.png) |
+
+### Double DQN's overestimation suppression is consistent across games
+
+Mean predicted Q-value during training. Variants with Double targets
+(red, blue) stay below their non-Double counterparts (gray, green) throughout
+training on **both** games — even on Pong, where Double DQN does not improve
+the final policy. This separates the *mechanism* claim of Double DQN
+(reducing overestimation) from its *policy* claim (improving returns):
+the mechanism reproduces robustly, the policy benefit does not.
+
+![Q-value estimates on Breakout](breakout_qvalues.png)
 
 ---
 
@@ -250,4 +285,6 @@ buffer reduced from 1M to 300k for RAM-conservative parallel runs.
 
 ## Acknowledgments
 
-This is course work for *Reinforcement Learning*, Spring 2026, AI Honors Program, Xi'an Jiaotong University. Code is written from scratch for this assignment; no external RL framework is used.
+This is course work for *Reinforcement Learning*, Spring 2026, AI Honors
+Program, Xi'an Jiaotong University. Code is written from
+scratch for this assignment; no external RL framework is used.
